@@ -74,7 +74,7 @@ def carpark_sort_by_distance(nearby_carpark_list):
     return nearby_carpark_list
 
 def get_nearest_five(sorted_carpark):
-    return nearby_carpark_list[:4]
+    return sorted_carpark[:4]
 
 def nearby_carpark_message(nearby_carpark_list):
     text = 'Nearby Carparks\n\n'
