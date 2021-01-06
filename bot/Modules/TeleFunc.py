@@ -9,13 +9,20 @@ def send_message(url, params, response_text,message_id):
     res = requests.post(url , params=params)
     response_body = json.loads(res.text)
 
-    LoggingFunc.complete_log_response(
-        message_id, 
-        response_text,
-        response_body,
-        response_body['result']['message_id']
-    )
-    
+    try:
+        LoggingFunc.complete_log_response(
+            message_id, 
+            response_text,
+            response_body,
+            response_body['result']['message_id']
+        )
+    except:
+        send_message(
+            url,
+            params, 
+            'There has been an error please send your location again!',
+            message_id
+        )
     return True
 
 def create_edit_msg_params(api_end_point, chat_id, previous_message_id ,text, reply_markup):
