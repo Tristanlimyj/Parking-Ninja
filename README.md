@@ -1,5 +1,7 @@
 # Parking Ninja Bot
 
+Built Using: Flask and PostgresSQL. The scheduled database updates were done using Cron.
+
 A Telegram Bot that allows people to be able to find nearby car parks using the URA Dataset.
 
 ## Telegram Bot Demo
