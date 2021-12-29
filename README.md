@@ -4,7 +4,9 @@ A Telegram Bot that allows people to be able to find nearby car parks using the 
 
 ## Telegram Bot Demo
 
+<div align="center">
 <img src="./Parking-Ninja.gif" height="450px"/>
+</div>
 
 ## Description
 
