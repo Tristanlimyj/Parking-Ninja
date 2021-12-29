@@ -1,3 +1,4 @@
 virtualenv
 .pgpass
 .env
+*__pycache__*
